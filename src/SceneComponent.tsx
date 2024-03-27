@@ -171,6 +171,14 @@ const setupFPSCamera = () => {
 const setupArcRotateCamera = () => {
 	universalCamera.position = new Vector3(0, 5, -10);
 
+	universalCamera.checkCollisions = false;
+	universalCamera.applyGravity = false;
+
+	universalCamera.keysUp = [];
+	universalCamera.keysLeft = [];
+	universalCamera.keysDown = [];
+	universalCamera.keysRight = [];
+
 	universalCamera.minZ = 0.01;
 
 	universalCamera.detachControl();
